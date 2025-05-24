@@ -3,7 +3,7 @@ import ProfileImage from "../../../shared/assets/Me.png";
 
 export default function ProfileHeader() {
   return (
-    <div className="flex items-center gap-4 md:gap-0">
+    <div className="flex items-center gap-4 md:justify-center md:gap-0">
       <Avatar className="h-auto w-15 md:w-40 xl:w-55">
         <AvatarImage
           src={ProfileImage}
