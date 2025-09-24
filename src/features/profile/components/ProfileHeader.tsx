@@ -1,5 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import ProfileImage from "../../../shared/assets/Me.png";
+import ProfileImage from "@/assets/Me.png";
 
 export default function ProfileHeader() {
   return (
