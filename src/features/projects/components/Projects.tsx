@@ -6,49 +6,39 @@ export interface projectInfo {
   technologies: string[];
   github: string;
   liveDemo: string;
+  videoDemo: string;
   image: string;
 }
 
 export default function Projects() {
   const projects: projectInfo[] = [
     {
-      title: "X Clone",
+      title: "SmartPly",
       description:
-        "xClone is a modern, fullstack Twitter clone built with React, ASP.NET Core, and PostgreSQL. It features user authentication, tweeting, following, liking, and responsive UI components .",
+        "A modern job application tracker that integrates AI + Gmail to help you stay on top of applications, recruiter replies, and interviews — all in one place.",
       technologies: [
-        "JavaScript",
+        "TypeScript",
         "React",
-        "Shadcn UI",
+        "Docker",
+        "CI/CD",
+        "AI",
         "Tailwind CSS",
         "ASP.NET Core",
         "PostgreSQL",
+        "Microsoft Azure",
       ],
-      github: "https://github.com/TahaLoghmari/X-Clone",
-      liveDemo: "",
-      image: "xClone",
-    },
-    {
-      title: "File Uploader",
-      description:
-        "FileUploader is a fullstack file management web app inspired by Google Drive. It allows users to upload, manage, and download files with a clean interface, secure authentication, and RESTful backend.",
-      technologies: [
-        "JavaScript",
-        "React",
-        "Shadcn UI",
-        "Tailwind CSS",
-        "ASP.NET Core",
-        "PostgreSQL",
-      ],
-      github: "https://github.com/TahaLoghmari/FileUploader",
-      liveDemo: "",
-      image: "fileUploader",
+      github: "https://github.com/TahaLoghmari/SmartPly",
+      liveDemo: "https://www.smartply.me/",
+      videoDemo:
+        "https://www.linkedin.com/feed/update/urn:li:activity:7376308844169302016/",
+      image: "SmartPly",
     },
   ];
 
   return (
     <div className="flex w-full flex-col gap-4">
-      <p className="font-extrabold">Projects</p>
-      <div className="grid w-full grid-cols-1 gap-3 sm:grid-cols-2">
+      <p className="font-bold">Projects</p>
+      <div className="grid w-full grid-cols-1 gap-3 lg:grid-cols-2">
         {projects.map((project, index) => (
           <Project key={index} info={project} />
         ))}

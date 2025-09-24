@@ -1,3 +1,5 @@
+import { Badge } from "@/components/ui/badge";
+
 export default function Skills() {
   const skills: string[] = [
     "JavaScript",
@@ -7,17 +9,19 @@ export default function Skills() {
     "ASP.NET Core",
     "Tailwind CSS",
     "C++",
-    "Shadcn UI",
+    "Docker",
+    "Github Actions",
+    "CI/CD",
     "PostgreSQL",
   ];
   return (
     <div className="flex w-full flex-col gap-3 rounded-sm border p-6">
-      <p className="font-extrabold">Skills</p>
+      <p className="font-bold">Skills</p>
       <div className="flex flex-wrap gap-2">
         {skills.map((skill) => (
-          <div key={skill} className="bg-accent rounded-full px-3 py-1">
+          <Badge key={skill} variant="secondary">
             <p className="text-[11px] font-semibold">{skill}</p>
-          </div>
+          </Badge>
         ))}
       </div>
     </div>
